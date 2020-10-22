@@ -3,7 +3,7 @@
       <h3>{{ beer.name }}</h3>
       <p>{{ beer.tagline }}</p>
       <p>abv:{{ beer.abv }}</p>
-      <img :src="beer.image_url" alt="beer pic">
+      <img class="large-beer":src="beer.image_url" alt="beer pic">
   </article>
 </template>
 
@@ -17,5 +17,9 @@ export default {
 </script>
 
 <style>
+
+.large-beer {
+    height: 30vh;
+}
 
 </style>
